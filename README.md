@@ -11,7 +11,7 @@ This Python library provides a convenient interface for interacting with the Nja
 To install the library, use the following command:
 
 ```
-This Library is not yet available on PyPi
+pip install Njalla
 ```
 
 ## Usage
