@@ -19,4 +19,3 @@ class NjallaAPI:
             "paypal": "paypal"
         }
 
-    # API functions will be added later

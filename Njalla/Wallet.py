@@ -67,7 +67,6 @@ class NjallaWallet:
             :return: Balance (int) in EUR.
             """
         data = {
-            "jsonrpc": "2.0",
             "method": "get-balance"
         }
         r = requests.post(self.base_url, json=data, headers=self.headers)
