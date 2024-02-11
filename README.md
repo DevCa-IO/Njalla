@@ -17,10 +17,9 @@ pip install Njalla
 ## Usage
 
 ```python
-from Njalla import Njalla
-
+import Njalla
 # Initialize the Njal.la client
-client = Njalla(api_key="your_api_key")
+client = Njalla.Client(api_key="your_api_key")
 ```
 
 ## API Key
@@ -48,26 +47,25 @@ or submit a [pull request](https://github.com/DevCa-IO/Njalla/pulls).
 
 ## Classes
 
-Njalla provides six different API classes.
+Njalla provides five different API classes.
 You can use these simply by adding the class name on top of your Instance.\
 Those are:
 - API
 - Domain
 - Server
-- User (used for Cookie Authentication, deprecated and not suggested to use by Njalla)
 - VPN
 - Wallet
 
 
 ```python
-from Njalla import Njalla
+import Njalla
 
 # Initialize the Njal.la client
-client = Njalla("your_api_key")
+client = Njalla.Client("your_api_key")
 
 # API
 
-print(client.API.add_token("comment", "from", "allowed_domains", "allowed_servers", "allowed_methods", "allowed_types", "acme")
+print(client.API.add_token("comment", "from", "allowed_domains", "allowed_servers", "allowed_methods", "allowed_types", "acme"))
 
 # Domain
 
@@ -75,11 +73,7 @@ print(client.Domain.register_domain("domain", "years"))
 
 # Server
 
-print(client.Server.add_traffic("id", "amount", "months",  "starts_today"))
-
-# User
-
-print(client.User.logout())
+print(client.Server.add_traffic("id", "amount", "months", "starts_today"))
 
 # VPN
 
@@ -91,3 +85,4 @@ print(client.Wallet.get_balance())
 ```
 
 All the methods are also available in our (not yet existing) ReadTheDocs Documentation.\
+You can find the documentation [here](https://njalla.readthedocs.io/en/latest/) soon.

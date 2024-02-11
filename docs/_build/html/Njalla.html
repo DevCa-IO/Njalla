@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Njalla package &mdash; Njalla 0.3 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=b489f392"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Njalla
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Njalla package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-Njalla.API">Njalla.API module</a><ul>
+<li><a class="reference internal" href="#Njalla.API.NjallaAPI"><code class="docutils literal notranslate"><span class="pre">NjallaAPI</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Njalla.Domain">Njalla.Domain module</a><ul>
+<li><a class="reference internal" href="#Njalla.Domain.NjallaDomain"><code class="docutils literal notranslate"><span class="pre">NjallaDomain</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Njalla.Server">Njalla.Server module</a><ul>
+<li><a class="reference internal" href="#Njalla.Server.NjallaServer"><code class="docutils literal notranslate"><span class="pre">NjallaServer</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Njalla.VPN">Njalla.VPN module</a><ul>
+<li><a class="reference internal" href="#Njalla.VPN.NjallaVPN"><code class="docutils literal notranslate"><span class="pre">NjallaVPN</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Njalla.Wallet">Njalla.Wallet module</a><ul>
+<li><a class="reference internal" href="#Njalla.Wallet.NjallaWallet"><code class="docutils literal notranslate"><span class="pre">NjallaWallet</span></code></a><ul>
+<li><a class="reference internal" href="#Njalla.Wallet.NjallaWallet.add_payment"><code class="docutils literal notranslate"><span class="pre">NjallaWallet.add_payment()</span></code></a></li>
+<li><a class="reference internal" href="#Njalla.Wallet.NjallaWallet.get_balance"><code class="docutils literal notranslate"><span class="pre">NjallaWallet.get_balance()</span></code></a></li>
+<li><a class="reference internal" href="#Njalla.Wallet.NjallaWallet.get_payment"><code class="docutils literal notranslate"><span class="pre">NjallaWallet.get_payment()</span></code></a></li>
+<li><a class="reference internal" href="#Njalla.Wallet.NjallaWallet.list_transactions"><code class="docutils literal notranslate"><span class="pre">NjallaWallet.list_transactions()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Njalla">Module contents</a><ul>
+<li><a class="reference internal" href="#Njalla.Njalla"><code class="docutils literal notranslate"><span class="pre">Njalla</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Njalla</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Njalla package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Njalla.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="njalla-package">
+<h1>Njalla package<a class="headerlink" href="#njalla-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-Njalla.API">
+<span id="njalla-api-module"></span><h2>Njalla.API module<a class="headerlink" href="#module-Njalla.API" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Njalla.API.NjallaAPI">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Njalla.API.</span></span><span class="sig-name descname"><span class="pre">NjallaAPI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Njalla/API.html#NjallaAPI"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Njalla.API.NjallaAPI" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-Njalla.Domain">
+<span id="njalla-domain-module"></span><h2>Njalla.Domain module<a class="headerlink" href="#module-Njalla.Domain" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Njalla.Domain.NjallaDomain">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Njalla.Domain.</span></span><span class="sig-name descname"><span class="pre">NjallaDomain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Njalla/Domain.html#NjallaDomain"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Njalla.Domain.NjallaDomain" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-Njalla.Server">
+<span id="njalla-server-module"></span><h2>Njalla.Server module<a class="headerlink" href="#module-Njalla.Server" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Njalla.Server.NjallaServer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Njalla.Server.</span></span><span class="sig-name descname"><span class="pre">NjallaServer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Njalla/Server.html#NjallaServer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Njalla.Server.NjallaServer" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-Njalla.VPN">
+<span id="njalla-vpn-module"></span><h2>Njalla.VPN module<a class="headerlink" href="#module-Njalla.VPN" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Njalla.VPN.NjallaVPN">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Njalla.VPN.</span></span><span class="sig-name descname"><span class="pre">NjallaVPN</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Njalla/VPN.html#NjallaVPN"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Njalla.VPN.NjallaVPN" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-Njalla.Wallet">
+<span id="njalla-wallet-module"></span><h2>Njalla.Wallet module<a class="headerlink" href="#module-Njalla.Wallet" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Njalla.Wallet.NjallaWallet">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Njalla.Wallet.</span></span><span class="sig-name descname"><span class="pre">NjallaWallet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Njalla/Wallet.html#NjallaWallet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Njalla.Wallet.NjallaWallet" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Njalla.Wallet.NjallaWallet.add_payment">
+<span class="sig-name descname"><span class="pre">add_payment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">via</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Njalla/Wallet.html#NjallaWallet.add_payment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Njalla.Wallet.NjallaWallet.add_payment" title="Link to this definition"></a></dt>
+<dd><p>Add a payment to the account.
+:param amount: Amount to add in EUR. (int) 5 or multiple of 15, max: 300
+:param via: Payment method. Possible values: paypal, bitcoin, litecoin, monero, zcash, ethereum
+:return: amount (int), address (string, payment address), url (string, for paypal)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Njalla.Wallet.NjallaWallet.get_balance">
+<span class="sig-name descname"><span class="pre">get_balance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Njalla/Wallet.html#NjallaWallet.get_balance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Njalla.Wallet.NjallaWallet.get_balance" title="Link to this definition"></a></dt>
+<dd><p>Get the balance of the account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Balance (int) in EUR.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Njalla.Wallet.NjallaWallet.get_payment">
+<span class="sig-name descname"><span class="pre">get_payment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payment_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Njalla/Wallet.html#NjallaWallet.get_payment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Njalla.Wallet.NjallaWallet.get_payment" title="Link to this definition"></a></dt>
+<dd><p>Get details about a payment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>payment_id</strong> – ID of the payment.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>JSON object with the details of the payment.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Njalla.Wallet.NjallaWallet.list_transactions">
+<span class="sig-name descname"><span class="pre">list_transactions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Njalla/Wallet.html#NjallaWallet.list_transactions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Njalla.Wallet.NjallaWallet.list_transactions" title="Link to this definition"></a></dt>
+<dd><p>List transactions (payments, registrations, renewals, etc.) of the last 90 days</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JSON object with the details of the transactions.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Njalla">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Njalla" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Njalla.Njalla">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Njalla.</span></span><span class="sig-name descname"><span class="pre">Njalla</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Njalla.html#Njalla"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Njalla.Njalla" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Luca from DevCa.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
