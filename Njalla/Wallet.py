@@ -43,9 +43,10 @@ class NjallaWallet:
             }
         }
         r = requests.post(self.base_url, json=data, headers=self.headers)
-        result = r.json()["result"]
-        if "error" in r.json():
-            raise ValueError(r.json()["error"]["message"])
+        response = r.json()
+        if "error" in response:
+            raise ValueError(response["error"]["message"])
+        result = response["result"]
         if via == "paypal":
             json_obj = {
                 "eur_amount": result["amount"],
@@ -70,10 +71,10 @@ class NjallaWallet:
             "method": "get-balance"
         }
         r = requests.post(self.base_url, json=data, headers=self.headers)
-        result = r.json()["result"]
-        if "error" in r.json():
-            raise ValueError(r.json()["error"]["message"])
-        return result["balance"]
+        response = r.json()
+        if "error" in response:
+            raise ValueError(response["error"]["message"])
+        return response["result"]["balance"]
 
     def get_payment(self, payment_id):
         """
@@ -89,10 +90,10 @@ class NjallaWallet:
             }
         }
         r = requests.post(self.base_url, json=data, headers=self.headers)
-        result = r.json()["result"]
-        if "error" in r.json():
-            raise ValueError(r.json()["error"]["message"])
-        return result
+        response = r.json()
+        if "error" in response:
+            raise ValueError(response["error"]["message"])
+        return response["result"]
 
     def list_transactions(self):
         """
@@ -105,7 +106,7 @@ class NjallaWallet:
             "params": {}
         }
         r = requests.post(self.base_url, json=data, headers=self.headers)
-        result = r.json()["result"]
-        if "error" in r.json():
-            raise ValueError(r.json()["error"]["message"])
-        return result
+        response = r.json()
+        if "error" in response:
+            raise ValueError(response["error"]["message"])
+        return response["result"]
